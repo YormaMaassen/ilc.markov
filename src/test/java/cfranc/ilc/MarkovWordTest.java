@@ -10,7 +10,6 @@ public class MarkovWordTest {
 	
 	@Test
 	public void getSimilarity_2SimpleWords_26() {
-		
 		MarkovWord m = new MarkovWord();
 		double expected = 0.33;
 		double actual = m.getSimilarity(when2SimpleWords[0],when2SimpleWords[1], 2);
@@ -18,8 +17,7 @@ public class MarkovWordTest {
 	}
 
 	@Test
-	public void getSimilarity_SameWord_100() {
-		
+	public void getSimilarity_SameWord_100() {		
 		MarkovWord m = new MarkovWord();
 		double expected = 1.0;
 		double actual = m.getSimilarity(when2SimpleWords[0],when2SimpleWords[0], 4);
